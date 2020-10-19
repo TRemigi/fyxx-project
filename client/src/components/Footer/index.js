@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
 
 const Footer = () => {
   return (
-    <footer>
-      <div>&copy;2020 by 'placeholder'</div>
+    <footer className="row justify-content-center">
+      <div>&copy;2020 by the Fyxx</div>
     </footer>
   );
 };

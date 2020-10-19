@@ -6,4 +6,6 @@ body {
   background-color: azure;
 }
 
-
+Main {
+  min-height: 80vh;
+}

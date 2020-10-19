@@ -1,12 +1,15 @@
 import React from "react";
-
 import { useQuery } from "@apollo/react-hooks";
+import "bootstrap/dist/css/bootstrap.css";
+
+import FlipGallery from "../components/FlipGallery";
 
 const Home = () => {
   return (
-    <main>
-      <div className="flex-row justify-space-between">
-        <div className="col-12 mb-3">Welcome to the Fyxx...</div>
+    <main className="container">
+      <div className="row justify-content-center mt-4 mb-4">
+        <div className="col-12 text-center">Welcome to the Fyxx...</div>
+        <FlipGallery />
       </div>
     </main>
   );

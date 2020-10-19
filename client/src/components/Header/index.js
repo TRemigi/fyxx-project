@@ -11,22 +11,26 @@ const Header = () => {
   };
 
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Navbar.Brand as={Link} to="/">
         <img
           alt="fyxx scissor logo"
-          src="../../assets/images/png/color-with-bg.png"
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
+          src={require("../../assets/images/svg/colorlogo-nobackground.svg")}
+          width="100"
+          height="100"
+          className="d-inline-block align-top ml-2"
         />
       </Navbar.Brand>
-      <Nav className="mr-auto">
+      <Nav className="ml-auto">
         <Nav.Link as={Link} to="/">
           Home
         </Nav.Link>
-        <Nav.Link href="#features">Features</Nav.Link>
-        <Nav.Link href="#pricing">Pricing</Nav.Link>
+        <Nav.Link as={Link} to="/">
+          Features
+        </Nav.Link>
+        <Nav.Link as={Link} to="/">
+          Pricing
+        </Nav.Link>
       </Nav>
     </Navbar>
   );
